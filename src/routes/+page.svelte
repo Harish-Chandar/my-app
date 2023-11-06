@@ -1,4 +1,5 @@
 <script>
+    import Nested from './Nested.svelte';
     let count = 0;
     let arr = [13,42,5,46];
     let paracontent = "see look it changed";
@@ -12,7 +13,7 @@
         } else {
             paracontent = "see look it changed"
         }
-        arr.push(1290); // this does nothing without the next line
+        arr.push(Math.floor(Math.random()*10)+1); // this does nothing without the next line
         arr = arr; // this updates the variable with an assignment, redundant in plain JS, but necessary here
         console.log(arr);
     }
@@ -28,6 +29,7 @@
 <button on:click={increment}> {count} {count === 1 ? "count" : "counts"}</button>
 <p id="para"> {paracontent} </p>
 <h2> My name is {fullname}</h2>
+<Nested ans={42} ></Nested>
 
 <style>
     
