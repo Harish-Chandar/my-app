@@ -11,7 +11,7 @@
         if (paracontent === "see look it changed"){
             paracontent = "it changed again wow";
         } else {
-            paracontent = "see look it changed"
+            paracontent = "see look it changed";
         }
         arr.push(Math.floor(Math.random()*10)+1); // this does nothing without the next line
         arr = arr; // this updates the variable with an assignment, redundant in plain JS, but necessary here
@@ -30,6 +30,7 @@
 <p id="para"> {paracontent} </p>
 <h2> My name is {fullname}</h2>
 <Nested ans={42} ></Nested>
+<a href="/GPAcalc"> GPA Calculator </a>
 
 <style>
     
